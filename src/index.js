@@ -1,7 +1,7 @@
+import './style.css';
 import Store from './modules/store.js';
 import UI from './modules/ui.js';
 import User from './modules/user.js';
-
 
 document.addEventListener('DOMContentLoaded', UI.displayUsers);
 
@@ -19,8 +19,4 @@ form.addEventListener('submit', (e) => {
   UI.addUserToList(user);
 
   UI.clearFields();
-
-    console.log(name, score);
-    console.log('form submitted:' + name + ' ' + score);
-
 });

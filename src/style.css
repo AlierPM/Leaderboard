@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-} 
+}
 
-body{
+body {
   background-color: goldenrod;
 }
-header{
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 70px;
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
 
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,14 +26,14 @@ main{
   width: 100%;
 }
 
-@media (max-width:327px) {
- body{
-  width: 100%;
- }
+@media (max-width: 327px) {
+  body {
+    width: 100%;
+  }
 
- main{
-  width: 100%;
- }
+  main {
+    width: 100%;
+  }
 }
 
 .left-side--content {
@@ -41,50 +43,59 @@ main{
   margin-right: 70px;
 }
 
-.left-side--titles{
-  display: flex;  
+.left-side--titles {
+  display: flex;
   justify-content: center;
-  }
+}
 
-  .left-side--titles h3 {
-   margin-right: 50px;
-  }
-  
-  table {
-    border: 5px solid green;
-    /* width: 80%; */
-    margin-top: 20px;
-  }
+.left-side--titles h3 {
+  margin-right: 50px;
+}
+
+table {
+  margin-top: 20px;
+  text-align: center;
+}
+
+table,
+tr {
+  border: 5px solid green;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
 
 .right-side--content {
-    display: flex;
-    flex-direction: column;
-  }
- 
- form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
 
-  input {
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input {
   margin-bottom: 10px;
   padding: 5px;
   outline: none;
-  }
+}
 
-  .add-btn{
-    align-self: flex-end;
-    background-color: green;
-    padding: 5px;
-    border-radius: 5px;
-    color: #fff;
-    
-  }
-  .refresh-btn {
-    align-self: flex-end;
-    background-color: green;
-    padding: 5px;
-    border-radius: 5px;
-    color: #fff;
-  }
+.add-btn {
+  align-self: flex-end;
+  background-color: green;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.refresh-btn {
+  align-self: flex-end;
+  background-color: green;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
