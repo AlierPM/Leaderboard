@@ -1,4 +1,5 @@
 import './style.css';
+
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/j22uKXxrSkg52SSFn2tq/scores';
 
 const list = document.querySelector('.list');
@@ -36,7 +37,7 @@ const addNewScore = async (name, score) => {
       },
       body: JSON.stringify({
         user: name,
-        score: score,
+        score,
       }),
     })
     .then((response) => response.json())
@@ -56,7 +57,7 @@ form.addEventListener('submit', (e) => {
     form.appendChild(addScore);
     setTimeout(() => {
       addScore.remove();
-    }, 2000);
+    }, 1000);
     form.reset();
   } else {
     const error = document.createElement('h4');
@@ -65,7 +66,7 @@ form.addEventListener('submit', (e) => {
     form.appendChild(error);
     setTimeout(() => {
       error.remove();
-    }, 3000);
+    }, 8000);
   }
 });
 

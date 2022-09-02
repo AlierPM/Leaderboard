@@ -16,6 +16,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 70px;
+  font-size: large;
 }
 
 main {
@@ -49,10 +50,6 @@ main {
   align-self: start;
 }
 
-.list ::empty { 
-  display: none;
-} 
-
 .list {
   list-style: none;
   border: 2px solid green;
@@ -60,14 +57,13 @@ main {
   background-color: #fff;
   margin-top: 1.3em;
   width: 400px;
-
 }
 
 .listItem {
   display: flex;
   justify-content: space-between;
-  color:goldenrod;
-   padding: 0.5em;
+  color: goldenrod;
+  padding: 0.5em;
 }
 
 .listItem:nth-child(even) {
@@ -125,23 +121,23 @@ button:hover {
     justify-content: center;
     margin-bottom: 2em;
   }
-  
+
   .left-side--content {
-    margin:0 auto;
+    margin: 0 auto;
     row-gap: 2em;
   }
 
   .right-side--content {
-    
-    margin:0 auto;
+    margin: 0 auto;
   }
-  
+
   .right-side--content h3 {
     margin-top: 2em;
     font-weight: bold;
   }
-  
+
   .list {
     padding: 2em 2em;
+    width: 350px;
   }
 }
