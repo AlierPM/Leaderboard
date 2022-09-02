@@ -46,13 +46,13 @@ const addNewScore = async (name, score) => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const name = document.querySelector('.name-input').value;
-  const score = document.querySelector('.score-input').value;
+  const name = document.querySelector('#name').value;
+  const score = document.querySelector('#score').value;
   if (name !== '' && score !== '') {
     addNewScore(name, score);
     const addScore = document.createElement('h4');
     addScore.classList.add('addScore');
-    addScore.textContent = 'Your score has been added! Click the refresh button to see it on the leader board';
+    addScore.textContent = 'Click the refresh button to view your result';
     form.appendChild(addScore);
     setTimeout(() => {
       addScore.remove();
