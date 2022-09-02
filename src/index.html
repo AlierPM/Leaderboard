@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -19,11 +19,9 @@
       <section class="left-side--content">
         <div class="left-side--titles">
           <h3>Recent scores</h3>
-          <button class="refresh-btn">Refresh</button>
+          <button type="reset" class="refresh-btn">Refresh</button>
         </div>
-        <table>
-          <tbody id="user-list"></tbody>
-        </table>
+        <ul class="list"></ul>
       </section>
       <section class="right-side--content">
         <h3>Add your score</h3>
@@ -46,6 +44,6 @@
         </form>
       </section>
     </main>
-    <script type="module" src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

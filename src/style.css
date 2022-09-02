@@ -16,31 +16,23 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 70px;
+  font-size: large;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 2em;
   width: 100%;
-}
-
-@media (max-width: 327px) {
-  body {
-    width: 100%;
-  }
-
-  main {
-    width: 100%;
-  }
+  margin-bottom: 2em;
 }
 
 .left-side--content {
   display: flex;
   flex-direction: column;
   align-self: start;
-  margin-right: 70px;
+  margin-right: 2em;
 }
 
 .left-side--titles {
@@ -49,21 +41,7 @@ main {
 }
 
 .left-side--titles h3 {
-  margin-right: 50px;
-}
-
-table {
-  margin-top: 20px;
-  text-align: center;
-}
-
-table,
-tr {
-  border: 5px solid green;
-}
-
-tr:nth-child(even) {
-  background-color: #d6eeee;
+  margin-right: 1.5em;
 }
 
 .right-side--content {
@@ -72,16 +50,42 @@ tr:nth-child(even) {
   align-self: start;
 }
 
+.list {
+  list-style: none;
+  border: 2px solid green;
+  gap: 1em;
+  background-color: #fff;
+  margin-top: 1.3em;
+  width: 400px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  color: goldenrod;
+  padding: 0.5em;
+}
+
+.listItem:nth-child(even) {
+  background-color: green;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 1.5em;
 }
 
 input {
-  margin-bottom: 10px;
+  margin-bottom: 0.8em;
   padding: 5px;
   outline: none;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.75);
+  border: 1px dashed #fff;
 }
 
 .add-btn {
@@ -90,6 +94,8 @@ input {
   padding: 5px;
   border-radius: 5px;
   color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .refresh-btn {
@@ -98,4 +104,40 @@ input {
   padding: 5px;
   border-radius: 5px;
   color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  .left-side--content {
+    margin: 0 auto;
+    row-gap: 2em;
+  }
+
+  .right-side--content {
+    margin: 0 auto;
+  }
+
+  .right-side--content h3 {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+
+  .list {
+    padding: 2em 2em;
+    width: 350px;
+  }
 }

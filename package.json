@@ -9,7 +9,6 @@
     "build": "webpack",
     "test": "jest",
     "watch": "jest  --watch"
-  
   },
   "repository": {
     "type": "git",
@@ -29,6 +28,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "dotenv-webpack": "^8.0.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
