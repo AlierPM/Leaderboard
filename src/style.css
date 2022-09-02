@@ -52,9 +52,19 @@ main {
   margin-right: 50px;
 }
 
+/* .tableContainer{
+  overflow-y:scroll;
+} */
+
 table {
   margin-top: 20px;
   text-align: center;
+  border-collapse: collapse;
+  overflow-y:scroll;
+}
+
+table ::empty { 
+  display: none;
 }
 
 table,
@@ -84,12 +94,20 @@ input {
   outline: none;
 }
 
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.75);
+  border: 1px dashed #fff;
+}
+
 .add-btn {
   align-self: flex-end;
   background-color: green;
   padding: 5px;
   border-radius: 5px;
   color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .refresh-btn {
@@ -98,4 +116,6 @@ input {
   padding: 5px;
   border-radius: 5px;
   color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
