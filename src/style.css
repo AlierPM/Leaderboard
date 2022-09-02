@@ -56,31 +56,44 @@ main {
   overflow-y:scroll;
 } */
 
-table {
+/* table {
   margin-top: 20px;
   text-align: center;
   border-collapse: collapse;
   overflow-y:scroll;
-}
+} */
 
-table ::empty { 
+.list ::empty { 
   display: none;
 }
 
-table,
+/* table,
 tr {
   border: 5px solid green;
-}
+} */
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
   background-color: #d6eeee;
-}
+} */
 
 .right-side--content {
   display: flex;
   flex-direction: column;
   align-self: start;
 }
+
+.list {
+  list-style: none;
+  border: 2px solid black;
+  gap: 20px;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 form {
   display: flex;
