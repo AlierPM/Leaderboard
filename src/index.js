@@ -13,6 +13,8 @@ const getScores = async () => {
 
 const display = async () => {
   const data = await getScores();
+  // eslint-disable-next-line no-unused-vars
+  const highToLow = data.result.sort((a, b) => b.score - a.score);
   data.result.forEach((e) => {
     const listItem = document.createElement('li');
     listItem.className = 'listItem';
@@ -66,7 +68,7 @@ form.addEventListener('submit', (e) => {
     form.appendChild(error);
     setTimeout(() => {
       error.remove();
-    }, 8000);
+    }, 3000);
   }
 });
 

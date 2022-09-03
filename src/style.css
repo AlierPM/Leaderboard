@@ -8,15 +8,25 @@
 }
 
 body {
+  width: 100%;
   background-color: goldenrod;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 70px;
+  margin: 0 auto;
   font-size: large;
+  line-height: 5em;
+  background-color: #fff;
+  max-width: 50%;
+  border-bottom: 5px dashed green;
+}
+
+header .fa-heart {
+  font-size: 48px;
+  color: green;
 }
 
 main {
@@ -57,6 +67,8 @@ main {
   background-color: #fff;
   margin-top: 1.3em;
   width: 400px;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .listItem {
@@ -80,6 +92,18 @@ input {
   margin-bottom: 0.8em;
   padding: 5px;
   outline: none;
+  color: gold;
+  transition: border-width 0.2s linear;
+}
+
+input:hover {
+  background-color: green;
+  color: goldenrod;
+  border: 2px solid #fff;
+}
+
+input::placeholder {
+  color: white;
 }
 
 button:hover {
@@ -111,6 +135,12 @@ button:hover {
 @media (max-width: 400px) {
   body {
     width: 100%;
+    background-color: goldenrod;
+  }
+
+  header {
+    max-width: 90%;
+    margin-top: 1em;
   }
 
   main {

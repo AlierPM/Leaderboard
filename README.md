@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: hit the API
+# Leaderboard: final touches
 
-This is a continuation working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
+This is a continuation working on the Leaderboard list app, added styles to the touch and feel of the Leaderboard API.
 
 ## Build With:
    * HTML
