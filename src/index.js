@@ -13,6 +13,7 @@ const getScores = async () => {
 
 const display = async () => {
   const data = await getScores();
+  const highToLow = data.result.sort((a, b) => b.score - a.score);
   data.result.forEach((e) => {
     const listItem = document.createElement('li');
     listItem.className = 'listItem';

@@ -660,7 +660,7 @@ var getScores = /*#__PURE__*/function () {
 
 var display = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-    var data;
+    var data, highToLow;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
@@ -670,6 +670,9 @@ var display = /*#__PURE__*/function () {
 
           case 2:
             data = _context2.sent;
+            highToLow = data.result.sort(function (a, b) {
+              return b.score - a.score;
+            });
             data.result.forEach(function (e) {
               var listItem = document.createElement('li');
               listItem.className = 'listItem';
@@ -682,7 +685,7 @@ var display = /*#__PURE__*/function () {
               score.textContent = e.score;
             });
 
-          case 4:
+          case 5:
           case "end":
             return _context2.stop();
         }
@@ -764,4 +767,4 @@ display();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlefb127332ab058d05b40c.js.map
+//# sourceMappingURL=bundleb0d7dee8202f245bfdf8.js.map

@@ -8,15 +8,36 @@
 }
 
 body {
-  background-color: goldenrod;
+  /* background-color: goldenrod;
+  background-image:url('./assets/tech-bg.gif.mp4') repeat cover;  */
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 70px;
+  margin: 0 auto;
   font-size: large;
+  line-height: 5em;
+  background-color: #fff;
+  max-width: 50%;
+  border: 5px dashed green;
+}
+
+header .fa-heart{
+  font-size:48px;color:green;
 }
 
 main {
@@ -57,6 +78,8 @@ main {
   background-color: #fff;
   margin-top: 1.3em;
   width: 400px;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .listItem {
